@@ -1,13 +1,100 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: Arial, sans-serif;
+  background-color: hsl(0, 0%, 96%);
+  padding: 20px;
+}
+
+.App {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  align-items: center;
+}
+
+.dropbutton{
+  align-items: center;
+  display: flex;
+  gap: 6px;
+}
+
+.dropdown-options{
+  position: absolute;
+  height: 100px;
+  width: 280px;
+  background-color: #dedddd;
+  z-index: 3;
+  /* padding: 12px; */
+  margin-top: 5px;
+}
+
+.first-dropdown{
+  display: flex;
+  justify-content: space-between;
+  margin: 15px;
+}
+
+.first-dropdown select{
+  width:100px;
+}
+
+label {
+  font-weight: bold;
+}
+
+select {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.kanban-board {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+  overflow-x: scroll;
+  background-color: #efeded;
+}
+
+.kanban-column {
+  /* background-color: #fff; */
+  padding: 20px;
+  min-width: 360px;
+  border-radius: 8px;
+  flex: 1;
+  justify-content: center;
+}
+
+.ticket-card {
+  background-color: #f9f9f9;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.user-image-placeholder {
+  display: flex;
+  background-color: rgb(185, 185, 185);
+  height: 22px;
+  width: 22px;
+  border-radius: 50%;
+  position: relative;
+}
+
+.user-small-image-placeholder {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #999;
+  position: absolute;
+  bottom: -2px;
+  right: -2px;
+  border: 2px solid #fff;
 }
